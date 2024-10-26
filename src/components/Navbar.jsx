@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="navbar navbar-secondary">
     <div className="navbar-start ">
         <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -37,19 +37,22 @@ const Navbar = () => {
                 <li><a>FAQs</a></li>
             </ul>
             </div>
+        </div>
+
+        <div className='navbar-center'>
             <a className="btn btn-ghost text-3xl text-purple-500 hover:text-white">
                 <img src='https://static.thenounproject.com/png/7340210-512.png' className='size-10 bg-white rounded-full'/>
                 ProofLock
             </a>
-            
         </div>
-        <div className="navbar-center hidden lg:flex">
+
+        {/* <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
             <li><a>Home</a></li>
 
             <li><a>FAQs</a></li>
             </ul>
-        </div>
+        </div> */}
         <div className="navbar-end">
             {/* Open the modal using document.getElementById('ID').showModal() method */}
             <button className="btn btn-accent btn-outline" onClick={()=>document.getElementById('login').showModal()}>Login</button>
