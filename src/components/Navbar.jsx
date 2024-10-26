@@ -1,9 +1,10 @@
+import Theme from './Theme';
 import Input from './Input';
 import React from 'react';
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 navbar-primary">
+    <div className="navbar navbar-secondary">
     <div className="navbar-start ">
         <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,22 +37,16 @@ const Navbar = () => {
                 <li><a>FAQs</a></li>
             </ul>
             </div>
-            <a className="btn btn-ghost text-xl">ProofLock</a>
+            <a className="btn btn-ghost text-3xl text-purple-500 hover:text-white">
+                <img src='https://static.thenounproject.com/png/7340210-512.png' className='size-10 bg-white rounded-full'/>
+                ProofLock
+            </a>
+            
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
             <li><a>Home</a></li>
-            <li>
-                <details>
-                <summary>Actions</summary>
-                <ul className="p-2">
-                    <li><a>Upload Evidence</a></li>
-                    <li><a>View Evidence</a></li>
-                    <li><a>Append to Evidence</a></li>
-                    <li><a>Aggregate Evidence</a></li>
-                </ul>
-                </details>
-            </li>
+
             <li><a>FAQs</a></li>
             </ul>
         </div>
