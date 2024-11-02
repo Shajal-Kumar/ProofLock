@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ethers } from "ethers";
-import EvidenceSystem from "../../../ProofLock/contracts/artifacts/contracts/EvidenceSystem.sol/EvidenceSystem.json";
+import EvidenceSystem from "./EvidenceSystem.json";
 import { PinataSDK } from "pinata-web3";
 import { BrowserProvider } from "ethers";
 import Submit from "./Submit";
